@@ -1,0 +1,6 @@
+- @jobs.each do |job|
+  %h2= job.title
+  %p= job.company
+  =link_to 'More', job
+
+%p= link_to 'new Job', new_job_path, class:'btn btn-info'
